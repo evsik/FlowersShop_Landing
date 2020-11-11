@@ -16,16 +16,32 @@
     <li><a href="../../catalog/index.html">Перейти в&nbsp;каталог</a></li>
 </ul>
 <form action="#">
-    Ваше имя <input type="text" placeholder="Введите имя"><br>
-    Пароль <input type="password" placeholder="Введите пароль"><br>
-    Ваш пол: <br>
-    М <input type="radio" name="pol"><br>
-    Ж <input type="radio" name="pol"><br>
-    Ваши увлечения: <br>
-    Спорт <input type="checkbox"><br>
-    IT <input type="checkbox"><br>
-    Музыка <input type="checkbox"><br>
-    <input type="submit"> <input type="reset">
+    <fieldset>
+        <legend>
+            <b><i>Форма регистрации</i></b>
+        </legend>
+        <label>Ваше имя <input type="text" size="30" placeholder="Введите имя"></label>
+        <br>
+        <label>Пароль <input type="password" size="8" placeholder="Введите пароль"></label><br>
+        <label for="city">Выберете город:</label>
+        <select name="city" id="city">
+            <option value="moscow">
+                Москва
+            </option>
+            <option value="saint">
+                Питер
+            </option>
+        </select>
+        <br>
+        Ваш пол: <br>
+        <label>М <input type="radio" name="pol"></label><br>
+        <label>Ж <input type="radio" name="pol"></label><br>
+        Ваши увлечения: <br>
+        <label>Спорт <input type="checkbox"></label><br>
+        <label>IT <input type="checkbox"></label><br>
+        <label>Музыка <input type="checkbox"></label><br>
+        <input type="submit"> <input type="reset">
+    </fieldset>
 </form>
 
 </body>
