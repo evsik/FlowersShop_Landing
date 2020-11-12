@@ -5,12 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
     <title>Контакты</title>
 </head>
 <body>
-<h1>Flowers Shop</h1>
+<h1 class="head">Flowers Shop</h1>
 <hr>
-<ul>
+<ul class="menu">
     <li><a href="../index.html">Главная</a></li>
     <li><a href="../contacts/contacts.html">Контакты</a></li>
     <li><a href="../catalog/catalog.html">Каталог</a></li>
@@ -22,9 +23,9 @@
         <legend>
             <b><i>Форма регистрации</i></b>
         </legend>
-        <label>Ваше имя <input type="text" size="30" placeholder="Введите имя"></label>
+        <label><input type="text" size="30" placeholder="Введите имя"></label>
         <br>
-        <label>Email <input type="email" size="30" placeholder="Email"></label><br>
+        <label><input type="email" size="30" placeholder="Email"></label><br>
         <label for="city">Выберете город:</label>
         <select name="city" id="city">
             <option value="moscow">
@@ -35,11 +36,11 @@
             </option>
         </select>
         <br>
-        <label>Отзыв: <br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
         </label>
         <br>
-        <input type="submit"> <input type="reset">
+        <input type="submit" class="button"> <input type="reset" class="button">
     </fieldset>
 </form>
 <hr>
