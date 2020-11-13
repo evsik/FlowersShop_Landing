@@ -108,3 +108,15 @@ input[type="submit"], input[type="reset"] {
 input[type="reset"] {
     background-color: #834d4d;
 }
+
+table {
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    border: 1px solid black;
+}
