@@ -6,63 +6,69 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet">
     <title>Контакты</title>
 </head>
 <body>
-<div class="header">
-    <h1 class="head">Flowers Shop</h1>
-    <ul class="menu">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../contacts/contacts.html">Контакты</a></li>
-        <li><a href="../catalog/catalog.html">Каталог</a></li>
-    </ul>
-</div>
-<hr>
-<h2>Напишите нам</h2>
-<form action="#">
-    <fieldset>
-        <legend>
-            <b><i>Форма регистрации</i></b>
-        </legend>
-        <label><input type="text" size="30" placeholder="Введите имя"></label>
+<div class="container">
+    <div class="header">
+        <h1 class="head">Flowers Shop</h1>
+        <ul class="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../catalog/catalog.html">Каталог</a></li>
+            <li><a href="../contacts/contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="content">
+        <h2>Напишите нам</h2>
+        <form action="#">
+            <fieldset>
+                <legend>
+                    <b><i>Форма регистрации</i></b>
+                </legend>
+                <label><input type="text" size="30" placeholder="Введите имя"></label>
+                <br>
+                <label><input type="email" size="30" placeholder="Email"></label><br>
+                <label for="city">Выберете город:</label>
+                <select name="city" id="city">
+                    <option value="moscow">
+                        Москва
+                    </option>
+                    <option value="saint">
+                        Питер
+                    </option>
+                </select>
+                <br>
+                <label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </label>
+                <br>
+                <input type="submit" class="button"> <input type="reset" class="button">
+            </fieldset>
+        </form>
+        <hr>
+        <h2>Наши контакты:</h2>
+        <h3>Москва:</h3>
         <br>
-        <label><input type="email" size="30" placeholder="Email"></label><br>
-        <label for="city">Выберете город:</label>
-        <select name="city" id="city">
-            <option value="moscow">
-                Москва
-            </option>
-            <option value="saint">
-                Питер
-            </option>
-        </select>
-        <br>
-        <label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-        </label>
-        <br>
-        <input type="submit" class="button"> <input type="reset" class="button">
-    </fieldset>
-</form>
-<hr>
-<h2>Наши контакты:</h2>
-<h3>Москва:</h3>
-<br>
-<ul>
-    <li>Номер телефона: <b>8 (495) 120-77-22</b></li>
-    <li>г. Москва, ул. 1-ая Рыбинская, дом 2</li>
-    <li>E-mail: <a href="mailto:info@roots-store.ru">info@roots-store.ru</a></li>
-</ul>
-<div style="position:relative;overflow:hidden;"><a
-        href="https://yandex.ru/maps/org/roots_flowers/1707665329/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:0;">Roots Flowers</a>
-    <iframe src="https://yandex.ru/map-widget/v1/-/CCUAmTdvHA" width="560" height="400"
-            style="position:relative;"></iframe>
-</div>
-<hr>
-<div class="footer">
-    <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a>
-    <p>&laquo;Все права защищены&raquo;</p>
+        <ul>
+            <li>Номер телефона: <b>8 (495) 120-77-22</b></li>
+            <li>г. Москва, ул. 1-ая Рыбинская, дом 2</li>
+            <li>E-mail: <a href="mailto:info@roots-store.ru">info@roots-store.ru</a></li>
+        </ul>
+        <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/org/roots_flowers/1707665329/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0;">Roots Flowers</a>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUAmTdvHA" width="100%" height="374"
+                    style="position:relative;"></iframe>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a>
+        <p>&laquo;Все права защищены&raquo;</p>
+    </div>
 </div>
 </body>
 </html>
