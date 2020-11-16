@@ -3,6 +3,10 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+.container {
+    width: 970px;
+}
+
 .head {
     color: #000000;
     font-size: 52px;
