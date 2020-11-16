@@ -54,7 +54,8 @@ h2 {
     line-height: 25px;
 }
 
-.content {}
+.content {
+}
 
 .content .item h3 a {
     color: #000000;
@@ -75,16 +76,17 @@ img:hover {
     outline: none;
 }
 
-.content .item .itemOrder {
+.content .itemOrder {
     margin-top: 10px;
+    overflow: hidden;
 }
 
-.content .item .itemOrder p {
+.content .itemOrder p {
     display: inline-block;
     margin: 0;
 }
 
-.content .item .itemOrder .order {
+.content .itemOrder .order {
     width: 96px;
     height: 25px;
     border-radius: 13px;
@@ -97,31 +99,48 @@ img:hover {
     cursor: pointer;
 }
 
-.content .item .itemOrder .order:hover {
+.content .itemOrder .order:hover {
     background-color: #000000;
     color: #ffffff;
 }
 
-.content .itemDescribe {
+.content .itemPhoto {
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+
+.content .itemDescribe, .itemDetails {
+    overflow: hidden;
+}
+
+.content .itemDescribe .itemDescribe__P {
     line-height: 16px;
     font-style: italic;
     color: #707070;
     font-size: 14px;
 }
 
-.content .itemDescribe::first-letter {
+.content .itemDescribe .itemDescribe__P::first-letter {
     font-size: 18px;
     color: #fc5b3f;
 }
 
-.content .itemDetails {
+.content .itemDetails .itemDetails__list {
     line-height: 24px;
     font-style: italic;
     color: #484343;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     text-align: left;
     list-style-type: square;
+}
+
+.content .itemDetails h3, .content .itemDescribe h3 {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
 }
 
 .content input {
@@ -203,4 +222,6 @@ img:hover {
     background-color: #f2f2f2;
     text-align: right;
     padding: 10px 10px 0 0;
+    box-sizing: border-box;
+    clear: both;
 }
