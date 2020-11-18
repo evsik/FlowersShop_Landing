@@ -5,12 +5,13 @@
 }
 
 body {
+    max-height: 1366px;
     background-color: #f8f8f8;
     font-family: Roboto, sans-serif;
 }
 
 .container {
-    width: 970px;
+    max-width: 990px;
     margin: 0 auto;
 }
 
@@ -97,6 +98,10 @@ h2 {
     margin-bottom: 5px;
 }
 
+.slider .slider-block .slider-blocks:last-child {
+    margin-bottom: 0;
+}
+
 .slider .slider-block .slider-blocks .slider-headers {
     font-weight: 700;
     text-transform: uppercase;
@@ -130,8 +135,11 @@ h2 {
 
 .slider .slider-page {
     width: 100%;
-    background: url("images/annie-spratt-KQ6sO8m1ZDE-unsplash.jpg") no-repeat 100%;
+    background: url("images/annie-spratt-KQ6sO8m1ZDE-unsplash.jpg") no-repeat;
+    background-size: cover;
+    table-layout: fixed;
 }
+
 
 .slider .slider-page .slider-page__block {
     width: fit-content;
@@ -336,11 +344,89 @@ h2 {
 }
 
 .footer {
-    margin-top: 65px;
-    height: 400px;
+    padding: 75px 0 70px 0;
     background-color: #f2f2f2;
-    text-align: right;
-    padding: 10px 10px 0 0;
-    box-sizing: border-box;
+    display: flex;
     clear: both;
+    justify-content: space-around;
 }
+
+.footer .footer-links {
+
+}
+
+.footer-headers {
+    margin-bottom: 30px;
+}
+
+.footer .footer-links .links-nav {
+}
+
+.footer .footer-links .links-nav .links-list, .info-list {
+    list-style-type: none;
+}
+
+.footer .footer-links .links-nav .links-list .links, .info-links, .join-P, .review {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer form input {
+    padding-left: 16px;
+    border-radius: 18px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    height: 40px;
+    width: 225px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer form label:first-child input {
+    margin-top: 20px;
+}
+
+.footer form .join-button {
+    padding: 0;
+    background-color: #6fb07f;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer .footer-review .review {
+    /*margin-left: 15px;*/
+    position: relative;
+    padding-left: 24px;
+}
+
+
+.footer .footer-review .review:first-of-type {
+    margin-bottom: 35px;
+}
+
+.footer .footer-review .review::before {
+    content: "“";
+    position: relative;
+    top: -2px;
+    left: -5px;
+    margin-left: -16px;
+    opacity: 0.3;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
