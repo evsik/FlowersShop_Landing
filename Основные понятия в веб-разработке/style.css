@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -71,6 +72,7 @@ body {
 
 .header .menu-conditions .menu-conditions-link img {
     margin-right: 5px;
+    vertical-align: bottom;
 }
 
 h2 {
@@ -78,6 +80,105 @@ h2 {
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider .slider-block {
+}
+
+.slider .slider-block .slider-blocks {
+    background-color: #ffffff;
+    width: 250px;
+    height: 165px;
+    padding: 20px 0 20px 25px;
+    margin-bottom: 5px;
+}
+
+.slider .slider-block .slider-blocks .slider-headers {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 25px;
+    font-size: 21px;
+}
+
+.slider .slider-block .slider-blocks .slider-headers span {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.slider .slider-block .slider-blocks .slider-links {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.slider .slider-block .slider-blocks .slider-links span {
+    border: 1px solid #000000;
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.slider .slider-page {
+    width: 100%;
+    background: url("images/annie-spratt-KQ6sO8m1ZDE-unsplash.jpg") no-repeat 100%;
+}
+
+.slider .slider-page .slider-page__block {
+    width: fit-content;
+    float: right;
+    text-align: center;
+    padding: 185px 50px 0 0;
+}
+
+.slider .slider-page .slider-page__head {
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.slider .slider-page .slider-page__head span {
+    color: #fc6f56;
+}
+
+.slider .slider-page .slider-page__P {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.slider .slider-page .shopNow {
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 17px;
+    border: 1px solid #000000;
+    background-color: transparent;
+    width: 136px;
+    height: 33px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.slider .slider-page .shopNow img {
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 .content {
