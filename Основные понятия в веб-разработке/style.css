@@ -14,10 +14,12 @@ body {
 }
 
 .header {
-    height: 265px;
+    /*height: 265px;*/
 }
 
 .header .head {
+    margin-top: 60px;
+    margin-bottom: 40px;
     color: #000000;
     font-size: 52px;
     font-weight: 300;
@@ -28,15 +30,14 @@ body {
 }
 
 .header .menu {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .header .menu li {
     list-style-type: none;
-    display: inline-block;
-    width: 25%;
 }
 
 .header .menu li a {
@@ -50,6 +51,26 @@ body {
 
 .header .menu li a:hover {
     color: #999999;
+}
+
+.header .menu li a img {
+    vertical-align: text-bottom;
+    margin-right: 8px;
+}
+
+.header .menu-conditions {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 25px 0;
+}
+
+.header .menu-conditions .menu-conditions-link {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header .menu-conditions .menu-conditions-link img {
+    margin-right: 5px;
 }
 
 h2 {
@@ -71,14 +92,6 @@ h2 {
 
 .content .item h3 a:hover {
     color: #999999;
-}
-
-img {
-    outline: 1px solid #fc5b3f;
-}
-
-img:hover {
-    outline: none;
 }
 
 .content .itemOrder {
@@ -208,7 +221,7 @@ img:hover {
     border-collapse: collapse;
 }
 
-.content table tr:first-of-type {
+.content table tr:nth-child(2n-1) {
     height: 100px;
 }
 
