@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
           rel="stylesheet">
     <title>Главная страница</title>
@@ -18,9 +20,53 @@
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog/catalog.html">Каталог</a>
             <li><a href="contacts/contacts.html">Контакты</a></li>
+            <li><a href="#"><img src="images/Shopping-cart-1@2x.png" alt="">Cart (0)</a></li>
+        </ul>
+        <hr>
+        <ul class="menu-conditions">
+            <li class="menu-conditions-link"><img src="images/icon_lock.png" alt="lock">100% Secure & PCI Compliance
+            </li>
+            <li class="menu-conditions-link"><img src="images/icon_van.png" alt="van">Order by 2PM for Same day delivery
+            </li>
+            <li class="menu-conditions-link"><img src="images/thumb-up.png" alt="thumb up">100% Satisfaction Guaranteed
+            </li>
         </ul>
     </div>
     <hr>
+    <div class="slider">
+        <div class="slider-block">
+            <div class="slider-blocks">
+                <h3 class="slider-headers"><span>Order</span><br>Flowers</h3>
+                <a href="#" class="slider-links">Shop Our Collection<br><span><img src="images/Arrow.svg"
+                                                                                   alt="arrow"></span></a>
+            </div>
+            <div class="slider-blocks">
+                <h3 class="slider-headers"><span>Corporate</span><br>Flowers</h3>
+                <a href="#" class="slider-links">See Our Work<br><span><img src="images/Arrow.svg"
+                                                                            alt="arrow"></span></a>
+            </div>
+            <div class="slider-blocks">
+                <h3 class="slider-headers"><span>Handcrafted</span><br>Wedding</h3>
+                <a href="#" class="slider-links">View Our Portfolio<br><span><img src="images/Arrow.svg"
+                                                                                  alt="arrow"></span></a>
+            </div>
+        </div>
+        <div class="slider-page">
+            <div class="slider-page__block">
+                <h2 class="slider-page__head">
+                    Order <span>Flowers</span>
+                </h2>
+                <hr>
+                <p class="slider-page__P">
+                    100% Moneyback Guarantee
+                </p>
+                <hr>
+                <button class="shopNow">
+                    Shop Now <img src="images/Arrow.svg" alt="arrow">
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="content">
         <table>
             <tr>
@@ -123,12 +169,65 @@
             </tr>
         </table>
     </div>
-    <hr>
     <div class="footer">
-        <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a>
-        <p>&laquo;Все права защищены&raquo;</p>
+        <div class="footer-links">
+            <h4 class="footer-headers">
+                Links
+            </h4>
+            <ul class="links-nav">
+                <li class="links-list"><a href="#" class="links">About Us</a></li>
+                <li class="links-list"><a href="#" class="links">Contact Us</a></li>
+                <li class="links-list"><a href="#" class="links">Delivery Policy</a></li>
+                <li class="links-list"><a href="#" class="links">100% Statisfaction Guaranteed</a></li>
+                <li class="links-list"><a href="#" class="links">Privacy Policy</a></li>
+                <li class="links-list"><a href="#" class="links">Security Policy</a></li>
+                <li class="links-list"><a href="#" class="links">Terms and Conditions</a></li>
+                <li class="links-list"><a href="#" class="links">Testimonials</a></li>
+                <li class="links-list"><a href="#" class="links">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h4 class="footer-headers">
+                Useful Information
+            </h4>
+            <ul class="info-nav">
+                <li class="info-list"><a href="#" class="info-links">Caring for flowers</a></li>
+                <li class="info-list"><a href="#" class="info-links">Caring for plants</a></li>
+                <li class="info-list"><a href="#" class="info-links">Flower Meaning</a></li>
+                <li class="info-list"><a href="#" class="info-links">How to choose flowers</a></li>
+                <li class="info-list"><a href="#" class="info-links">Message Ideas</a></li>
+            </ul>
+        </div>
+        <div class="footer-join">
+            <h4 class="footer-headers">
+                Stay Connected
+            </h4>
+            <p class="join-P">
+                Join our email list for exclusive news <br>
+                and deals
+            </p>
+            <form action="#">
+                <label><input type="text"    placeholder="Enter your name"></label>
+                <label><input type="email" placeholder="Enter your email address"></label>
+                <input type="submit" class="join-button" value="Join Now">
+            </form>
+        </div>
+        <div class="footer-review">
+            <h4 class="footer-headers">
+                Testimonials
+            </h4>
+            <p class="review">
+                Lorem Ipsum is&nbsp;simply dummy text the <br>
+                printing and typesetting industry. Lorem <br>
+                Ipsum has been the industry&rsquo;s standard <br>
+                dummy text ever
+            </p>
+            <p class="review">
+               Lorem Ipsum is&nbsp;simply dummy text the <br>
+                printing and typesetting industry.
+            </p>
+        </div>
     </div>
-    <hr>
 </div>
 
 </body>
